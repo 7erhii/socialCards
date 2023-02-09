@@ -1,0 +1,22 @@
+header.header 
+  .person
+    .person__logo 
+      +image('person.png')(class='person__logo-img')
+
+    .person__line
+    .person__name
+      p.person__name-text
+        +name
+  .switchers 
+    .switch__position-items
+      a(href="").switch__position-grid
+        .switch__position-btn-grid
+          +image('layout_grid_icon.svg')(class='switch__position-btn-grid-img')
+      a(href="").switch__position-list
+        .switch__position-btn-list
+          +image('layout_list_icon.svg')(class='switch__position-btn-list-img')
+
+    .switch__theme
+      .switch__theme-btn
+        a(href="").switch__theme-link
+          +image('change-theme.svg')(class='switch__theme-img')
