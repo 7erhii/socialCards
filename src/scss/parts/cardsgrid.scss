@@ -1,189 +1,152 @@
 .cards {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 40px 15px;
-   justify-content: space-between;
-   gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 15px;
+  justify-content: space-between;
 }
 
 .card {
-   padding: 5px 0;
-}
-.card__item {
-   border-radius: 8px;
-   transition: all .4s ease;
-   padding: 5px;
+  padding: 10px;
+  max-width: calc(33% - 15px);
+  width: 100%;
+
+  &__item {
+    border-radius: 8px;
+    transition: all .4s ease;
+    padding: 5px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #262222;
+    border-radius: 8px;
+
+    font-size: 40px;
+
+    i {
+      margin: 0 auto;
+    }
+  }
+
+  .card-descr {
+    padding: 15px 5px;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0 0 0 / 85%);
+  }
+
+  &__subtitle {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(0 0 0 / 60%);
+    line-height: 18px;
+  }
 }
 
 
-.card__logo {
-   display: flex;
-   align-items: center;
-   height: 68px;
-   width: 290px;
-   background-color: rgb(182, 178, 178);
-   border-radius: 8px ;
-   gap: 20px;
-
-   font-size: 40px;
-}
-.card__logo i {
-   margin: 0 auto;
-}
-.card__title {
-   max-width: 260px;
-   padding: 15px 15px 0 15px;
-   font-size: 20px;
-   font-weight: 600;
-   color: $cardTitleColor;
-}
-.card__subtitle {
-   display: flex;
-   align-items: center;
-   height: 40px;
-   max-width: 260px;
-   padding: 15px 15px 0 15px;
-   font-size: 14px;
-   color: $cardSubTitleColor;
-}
-
-// ____________________________________________________________PORITIONS_______________________
 .list .cards {
-   display: block;
-   flex-wrap: wrap;
-   padding: 40px 15px;
+  display: block;
+  flex-wrap: wrap;
+  padding: 40px 15px;
+}
+
+.list {
+  .card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+
+    &__logo {
+      width: 280px;
+    }
+  }
 }
 
 .list .card__item {
-   display: flex;
-   align-items: center;
-   width: 100%;
-   margin: 14px auto;
-   transition: all .45s ease;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all .45s ease;
 }
 
 .list .card-descr {
-   display: flex;
-   justify-content: space-between;
-   width: 70% ;
-   padding-left: 20px;
-   margin: 0 auto;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding-left: 20px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .list .card__title {
-   max-width: 200px;
-   padding: 0px 12px 0px 12px;
-   font-size: 18px;
-   text-align: 20px;
+  max-width: 200px;
+  padding: 0px 12px 0px 12px;
+  font-size: 18px;
+  text-align: 20px;
 }
 
 .list .card__subtitle {
-      max-width: 260px;
-      padding: 0px 0px 0 0px;
-      font-size: 14px;
-      color: $cardSubTitleColor;
+  max-width: 260px;
+  padding: 0px 0px 0 0px;
+  font-size: 14px;
+  color: $cardSubTitleColor;
 }
 
-// .list .switch__position-list {
-//    background-color: rgb(0, 0, 0);
-//    border-radius: 4px;
-// }
-
-// .switch__position-btn-grid img {
-//    filter: invert(1);
-// }
-// .list .switch__position-btn-list img {
-//    filter: invert(1);
-// }
-
-// .switch__position-list {
-//    background-color: inherit;
-//    border: 1px solid black;
-//    border-radius: 4px;
-
-// }
-
-// .switch__position-grid {
-//    background-color: rgb(0, 0, 0);
-//    border: 1px solid black;
-//    border-radius: 4px;
-// }
-// .switch__position-btn-grid img {
-//    filter: invert(1);
-// }
-
-// .list .switch__position-btn-grid img {
-//    background-color: inherit;
-//    filter: invert(0);
-
-// }
-// .list .switch__position-grid {
-//    background-color: inherit;
-// }
-
-
-
-// .dark .switch__position-btn-list img {
-//    filter: invert(1);
-// }
-
-// .dark .switch__position-btn-grid img {
-//    filter: invert(1);
-// }
-
-// .dark.list .switch__position-list {
-//    border: 1px solid #fff;
-// }
-// .dark .switch__position-grid {
-//    border: 1px solid #fff;
-// }
-// .dark.list .switch__position-grid {
-// }
 .switch__position-btn-grid {
-   border: 1px solid rgb(0, 0, 0);
-   border-radius: 4px;
-   transition: all .27s;
-
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  transition: all .27s;
 }
-
 
 .list .switch__position-btn-list {
-   border: 1px solid rgb(0, 0, 0);
-   border-radius: 4px;
-   transition: all .27s;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  transition: all .27s;
 }
+
 .list .switch__position-btn-grid {
-   border: none;
-   transition: all .27s;
+  border: none;
+  transition: all .27s;
 
 }
 
 .dark .switch__position-btn-grid {
-   border: 1px solid rgb(255, 255, 255);
-   border-radius: 4px;
-   transition: all .27s;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: all .27s;
 
 }
+
 .dark .switch__position-btn-grid img {
-   filter: invert(1);
-   transition: all .27s;
+  filter: invert(1);
+  transition: all .27s;
 
 }
 
 .dark .switch__position-btn-list img {
-   filter: invert(1);
-   transition: all .27s;
+  filter: invert(1);
+  transition: all .27s;
 
 }
+
 .dark.list .switch__position-btn-grid {
-   border: none;
-   transition: all .27s;
+  border: none;
+  transition: all .27s;
 
 }
 
 .dark.list .switch__position-btn-list {
-   border: 1px solid rgb(255, 255, 255);
-   border-radius: 4px;
-   transition: all .27s;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: all .27s;
 }

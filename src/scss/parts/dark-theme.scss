@@ -1,36 +1,46 @@
 .dark {
-   background-color: #101829;
+  background-color: #101829;
 }
 
 .dark .wrapper {
-   background-color: #101829;;
+  background-color: #101829;;
 }
 
 .dark .header {
-   background-color: #101829;
-}
-.dark .card {
-   box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px;
-   border-radius: 8px;
+  background-color: #101829;
 }
 
+.dark .card {
+  border-radius: 8px;
+}
 
 .dark .person__logo {
-   background-color: $darkThemeLogo
-   
+  background-color: #fff;
 }
+
 .dark .person__name-text {
-   color: $darkThemeNameColor;
+  color: #fff;
 }
 
 .dark .card__title-text {
-   color: $darkThemeCardTitleText;
+  color: $darkThemeCardTitleText;
 }
 
 .dark .card__subtitle-text {
-   color: $darkThemeCardSubtitleText;
+  color: $darkThemeCardSubtitleText;
 }
+
 .dark .switch__theme-img {
-   filter: invert(1);
-   transform: rotateX(180deg);
+  filter: invert(1);
+  transform: rotateX(180deg);
+}
+
+.dark {
+
+  .card {
+    &__logo {
+      background: #303341;
+    }
+  }
+
 }
